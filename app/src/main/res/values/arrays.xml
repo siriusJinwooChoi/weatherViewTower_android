@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/tools">
+    <!--타인에게 알림 푸쉬 방법-->
+    <string-array name="select_dialog_pushchoice">
+        <item name="kradio" >카카오톡</item>
+        <item name="sradio" >SMS</item>
+    </string-array>
+
+    <!--도시 선택하기-->
+    <string-array name="select_dialog_city">
+        <item>서울(한국)</item>
+        <item>수원</item>
+        <item>인천</item>
+        <item>대전</item>
+        <item>창원</item>
+        <item>안성</item>
+        <item>남양주</item>
+        <item>안동</item>
+
+        <item>도쿄(일본)</item>
+        <item>오사카</item>
+        <item>후쿠오카</item>
+        <item>요코하마</item>
+        <item>가와고에</item>
+        <item>고베</item>
+        <item>하다노</item>
+        <item>지바</item>
+        <item>가고시마</item>
+
+        <item>워싱턴(미국)</item>
+        <item>시카고</item>
+        <item>LA</item>
+        <item>샌프란시스코</item>
+        <item>뉴욕</item>
+        <item>시애틀</item>
+        <item>보스턴</item>
+        <item>라스베이거스</item>
+
+        <item>베이징(중국)</item>
+        <item>상하이</item>
+        <item>텐진</item>
+        <item>홍콩</item>
+        <item>광저우</item>
+        <item>충칭</item>
+
+        <item>런던(영국)</item>
+
+        <item>파리(프랑스)</item>
+
+        <item>로마(이탈리아)</item>
+        <item>밀라노</item>
+        <item>베니스</item>
+
+        <item>마드리드(스페인)</item>
+
+        <item>이스탄불(터키)</item>
+
+        <item>방콕(태국)</item>
+    </string-array>
+
+
+    <!--음성제어 명령어들-->
+    <string-array name="select_dialog_suncmd">
+        <item>맑음</item>
+        <item>맑은 날씨</item>
+        <item>맑은 날씨 보여줘</item>
+    </string-array>
+
+    <string-array name="select_dialog_cloudcmd">
+        <item>흐림</item>
+        <item>흐린 날씨</item>
+        <item>흐린날씨보여줘</item>
+    </string-array>
+
+    <string-array name="select_dialog_raincmd">
+        <item>비</item>
+        <item>비오는 날씨</item>
+        <item>비오는날씨보여줘</item>
+    </string-array>
+
+    <string-array name="select_dialog_snowcmd">
+        <item>눈</item>
+        <item>눈오는 날씨</item>
+        <item>눈오는날씨보여줘</item>
+    </string-array>
+
+    <string-array name="select_dialog_drizzlecmd">
+        <item>안개</item>
+        <item>안개낀 날씨</item>
+        <item>안개낀날씨보여줘</item>
+    </string-array>
+
+    <string-array name="select_dialog_thundercmd">
+        <item>천둥</item>
+        <item>번개</item>
+        <item>천둥번개</item>
+        <item>천둥치는 날씨</item>
+        <item>번개치는 날씨</item>
+        <item>천둥번개 보여줘</item>
+    </string-array>
+
+    <string-array name="select_dialog_extremecmd">
+        <item>기상이변</item>
+        <item>기상이변 날씨</item>
+        <item>기상이변 보여줘</item>
+        <item>기상이변 날씨보여줘</item>
+    </string-array>
+
+
+
+
+    <!--뷰 타워 내의 디바이스들 사용자가 직접 설정-->
+    <string-array name="select_dialog_suntower">
+        <item>빨강 조명 설정 ON/OFF</item>
+        <item>초록 조명 설정 ON/OFF</item>
+        <item>파랑 조명 설정 ON/OFF</item>
+        <item>비 내림 설정 ON/OFF</item>
+        <item>바람 설정 ON/OFF</item>
+        <item>안개 분사 ON/OFF</item>
+    </string-array>
+
+    <string-array name="select_dialog_cloudtower">
+        <item>빨강 조명 설정 ON/OFF</item>
+        <item>초록 조명 설정 ON/OFF</item>
+        <item>파랑 조명 설정 ON/OFF</item>
+        <item>비 내림 설정 ON/OFF</item>
+        <item>바람 설정 ON/OFF</item>
+        <item>안개 분사 ON/OFF</item>
+    </string-array>
+
+    <string-array name="select_dialog_raintower">
+        <item>빨강 조명 설정 ON/OFF</item>
+        <item>초록 조명 설정 ON/OFF</item>
+        <item>파랑 조명 설정 ON/OFF</item>
+        <item>비 내림 설정 ON/OFF</item>
+        <item>바람 설정 ON/OFF</item>
+        <item>안개 분사 ON/OFF</item>
+    </string-array>
+
+    <string-array name="select_dialog_snowtower">
+        <item>빨강 조명 설정 ON/OFF</item>
+        <item>초록 조명 설정 ON/OFF</item>
+        <item>파랑 조명 설정 ON/OFF</item>
+        <item>비 내림 설정 ON/OFF</item>
+        <item>바람 설정 ON/OFF</item>
+        <item>안개 분사 ON/OFF</item>
+    </string-array>
+
+    <string-array name="select_dialog_thundertower">
+        <item>빨강 조명 설정 ON/OFF</item>
+        <item>초록 조명 설정 ON/OFF</item>
+        <item>파랑 조명 설정 ON/OFF</item>
+        <item>비 내림 설정 ON/OFF</item>
+        <item>바람 설정 ON/OFF</item>
+        <item>안개 분사 ON/OFF</item>
+    </string-array>
+
+    <string-array name="select_dialog_drizzletower">
+        <item>빨강 조명 설정 ON/OFF</item>
+        <item>초록 조명 설정 ON/OFF</item>
+        <item>파랑 조명 설정 ON/OFF</item>
+        <item>비 내림 설정 ON/OFF</item>
+        <item>바람 설정 ON/OFF</item>
+        <item>안개 분사 ON/OFF</item>
+    </string-array>
+
+    <string-array name="select_dialog_extremetower">
+        <item>빨강 조명 설정 ON/OFF</item>
+        <item>초록 조명 설정 ON/OFF</item>
+        <item>파랑 조명 설정 ON/OFF</item>
+        <item>비 내림 설정 ON/OFF</item>
+        <item>바람 설정 ON/OFF</item>
+        <item>안개 분사 ON/OFF</item>
+    </string-array>
+
+
+    <string-array name="select_dialog_directcmd">
+        <item>맑은 날씨 확인</item>
+        <item>흐린 날씨 확인</item>
+        <item>비 날씨 확인</item>
+        <item>눈 날씨 확인</item>
+        <item>천둥/번개 날씨 확인</item>
+        <item>안개 날씨 확인</item>
+        <item>기상이변 날씨 확인</item>
+    </string-array>
+
+    <string-array name="select_dialog_viewcmd">
+        <item>맑은</item>
+        <item>흐린</item>
+        <item>비</item>
+        <item>눈</item>
+        <item>천둥/번개</item>
+        <item>안개 날씨</item>
+        <item>기상이변</item>
+        <item>전부 오프상태로 설정하기</item>
+        <item>원래의 날씨로 돌아가기</item>
+    </string-array>
+
+</resources>

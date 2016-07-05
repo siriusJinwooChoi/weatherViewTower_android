@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/designlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.project_weather.WeatherInfo.WeatherViewActivity">
+
+    <!--도시부터 시간별 위쪽까지-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!--도시정보-->
+        <TextView
+            android:id="@+id/txt_cityinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="120dp"
+            android:paddingTop="45dp"
+            android:textColor="#FFF"
+            android:textSize="35dp" />
+
+        <!--온/습도 정보(큰화면)-->
+        <TextView
+            android:id="@+id/txt_temphumi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="130dp"
+            android:textColor="#FFF"
+            android:textSize="20dp" />
+
+        <!--날씨정보-->
+        <TextView
+            android:id="@+id/txt_weatherinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="130dp"
+            android:textColor="#FFF"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+    <!--중간쪽 최고/저기온, 내부온/습도, 바람 정보-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:paddingLeft="10dp"
+        android:layout_weight="2">
+
+        <!--최고/최저온도-->
+        <TextView
+            android:id="@+id/txt_minmaxtemp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:textColor="#FFF"
+            android:textSize="12dp" />
+
+        <!-- 풍속-->
+        <TextView
+            android:id="@+id/txt_wind"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="80dp"
+            android:textColor="#FFF"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+
+
+    <!--시간별부터 아래끝까지-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_time1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:textColor="#555"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_time2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:textColor="#555"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_time3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:textColor="#555"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_time4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:textColor="#555"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_time5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="10dp"
+                android:textColor="#555"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txt_temp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="15dp"
+                android:textColor="#333"
+                />
+
+            <TextView
+                android:id="@+id/txt_temp2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:textSize="15dp"
+                android:textColor="#333"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/txt_temp3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:textSize="15dp"
+                android:textColor="#333"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/txt_temp4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="2dp"
+                android:textSize="15dp"
+                android:textColor="#333"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/txt_temp5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:textSize="15dp"
+                android:textColor="#333"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

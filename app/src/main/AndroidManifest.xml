@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project_weather">
+
+    <!-- SMS 부분 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- GCM 부분 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.example.project_weather.permission.C2D_MESSAGE" />
+
+    <!-- Naver Talk 부분 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <permission
+        android:name="com.example.project_weather.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Naver Talk -->
+        <activity android:name=".naverTalk.NaverTalkActivity" />
+
+        <!-- 제어부분 -->
+        <activity android:name=".control.ControlActivity" />
+        <activity android:name=".control.SubControlActivity" />
+
+        <!-- 전체 View 부분 -->
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".kakao.KakaoActivity" />
+        <activity android:name=".sms.SMSActivity" />
+        <activity android:name=".sms.ShowSMSActivity" />
+        <activity android:name=".gcm.GCMActivity" />
+
+        <!-- Service 부분 -->
+        <!-- GCM 부분 -->
+        <service
+            android:name=".gcm.MyGcmListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <!-- GCM 부분 -->
+        <service
+            android:name=".gcm.MyInstanceIDListenerService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </service>
+
+        <!-- device의 고유 토큰을 설정하기 위함 -->
+        <!-- GCM 부분 -->
+        <service
+            android:name=".gcm.RegistrationIntentService"
+            android:exported="false" />
+
+        <!-- Receiver 부분 -->
+        <!-- SMS 부분 -->
+        <receiver android:name=".sms.SMSBroadcast">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- GCM 부분 -->
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.example.project_weather" />
+            </intent-filter>
+        </receiver>
+
+        <!-- kakao app key 등록 부분 -->
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+    </application>
+
+</manifest>
