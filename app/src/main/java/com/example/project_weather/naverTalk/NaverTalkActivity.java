@@ -3,7 +3,7 @@ package com.example.project_weather.naverTalk;
 Made by : Jinwoo Choi,
 Location : Suwon, Korea.
 Date    : 2016.04.12
-Major   : Hankuk University of Foreign Studies, ICE(Information Communication Engineering,  201003629
+Major   : Hankuk University of Foreign Studies, ICE(Information Communication Engineering)
  */
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -339,7 +339,7 @@ public class NaverTalkActivity extends Activity {
     }
 
     String result="";
-    private static final String CLIENT_ID = "4XhT5raObbDCL74KlOlP"; // "내 애플리케이션"에서 Client ID를 확인해서 이곳에 적어주세요.
+    private static final String CLIENT_ID = "Your CLIENT_ID"; // "내 애플리케이션"에서 Client ID를 확인해서 이곳에 적어주세요.
     private static final SpeechConfig SPEECH_CONFIG = SpeechConfig.OPENAPI_KR; // or SpeechConfig.OPENAPI_EN
 
     private RecognitionHandler handler;
