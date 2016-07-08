@@ -3,7 +3,7 @@ package com.example.project_weather;
 Made by : Jinwoo Choi,
 Location : Suwon, Korea.
 Date    : 2016.04.12
-Major   : Hankuk University of Foreign Studies, ICE(Information Communication Engineering
+Major   : Hankuk University of Foreign Studies, ICE(Information Communication Engineering)
  */
 
 import android.app.Activity;
