@@ -4,7 +4,7 @@ package com.example.project_weather.naverTalk;
 Made by : Jinwoo Choi,
 Location : Suwon, Korea.
 Date    : 2016.04.12
-Major   : Hankuk University of Foreign Studies, ICE(Information Communication Engineering)
+Major   : Hankuk University of Foreign Studies, ICE(Information Communication Engineering,  201003629
  */
 
 import android.app.Activity;
@@ -154,7 +154,7 @@ class NaverRecognizer implements SpeechRecognitionListener {
             public void run() {
                 super.run();
                 try {
-                    URL url = new URL("http://(Your Server IP Address)/vcontrol?command="+cmd);     //server 주소에 보내주겠다는 뜻.
+                    URL url = new URL("http://192.168.219.154:8087/vcontrol?command="+cmd);     //server 주소에 보내주겠다는 뜻.
                     //URL url = new URL(urladdr +"/vcontrol?command="+cmd);     //server 주소에 보내주겠다는 뜻.
                     //해당 주소의 페이지로 접속을 하고, 단일 HTTP 접속을 하기위해 캐스트한다
                     HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
